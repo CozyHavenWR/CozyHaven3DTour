@@ -10,12 +10,78 @@
   <meta property="og:image" content="https://CozyHavenWR.github.io/CozyHaven3DTour/IMG_9834.jpeg" />
   <meta property="og:url" content="https://CozyHavenWR.github.io/CozyHaven3DTour/" />
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Styling -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+    .card {
+      background: #fff;
+      padding: 2rem 3rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      max-width: 400px;
+      animation: fadeIn 0.8s ease;
+    }
+    .card h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .card p {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #0078d7;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 1.5rem;
+      animation: spin 1s linear infinite;
+    }
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background: #0078d7;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    a:hover {
+      background: #005fa3;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-  <h1>Redirecting to Cozy Haven's 3D House Tour</h1>
-  <p>If you’re not redirected automatically, <a href="https://www.zillow.com/homedetails/YOUR_ZILLOW_LINK_HERE">click here</a>.</p>
+  <div class="card">
+    <div class="loader"></div>
+    <h1>Redorecting to Cozy Haven's 3D House Tour...</h1>
+    <p>Please wait a moment. If you’re not redirected automatically, click below:</p>
+    <a href="https://www.zillow.com/view-3d-home/062b549a-ada8-4dd3-8cc6-36c906da366d/?utm_source=captureapp">Go to Tour</a>
+  </div>
 
-  <!-- Delay redirect by 5 seconds -->
+  <!-- Auto redirect after 5 seconds -->
   <script>
     setTimeout(function() {
       window.location.href = "https://www.zillow.com/view-3d-home/062b549a-ada8-4dd3-8cc6-36c906da366d/?utm_source=captureapp";
